@@ -1,0 +1,101 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Adana Kebab",
+      "desc": "Brochette de viande hachée épicée, grillée au charbon, accompagnée de riz et de salade fraîche.",
+      "price": "1 400 DA",
+      "cat": "grillades",
+      "grad": "g0",
+      "recommended": true,
+      "photo": "./assets/images/menu/adana_kebab.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Meze Tabağı",
+      "desc": "Une sélection de mezzes turcs préparés maison, frais et savoureux.",
+      "price": "1 200 DA",
+      "cat": "mezzes",
+      "grad": "g1",
+      "recommended": true,
+      "photo": "./assets/images/menu/meze_tabagi.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mix Grill",
+      "desc": "Assortiment de viandes grillées au charbon, servi avec riz, salade et accompagnements.",
+      "price": "2 400 DA",
+      "cat": "grillades",
+      "grad": "g2",
+      "recommended": true,
+      "photo": "./assets/images/menu/mix_grill.jpg"
+    },
+    {
+      "id": 4,
+      "name": "İskender Kebab",
+      "desc": "Morceaux de viande grillée sur pain, sauce tomate, beurre fondu et yaourt.",
+      "price": "1 800 DA",
+      "cat": "grillades",
+      "grad": "g3",
+      "recommended": false,
+      "photo": "./assets/images/menu/iskender_kebab.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Soupe de Lentilles",
+      "desc": "Soupe traditionnelle turque de lentilles rouges, douce et réconfortante.",
+      "price": "600 DA",
+      "cat": "mezzes",
+      "grad": "g4",
+      "recommended": false,
+      "photo": "./assets/images/menu/soupe_lentilles.webp"
+    },
+    {
+      "id": 6,
+      "name": "Baklava",
+      "desc": "Pâtisserie traditionnelle aux fines feuilles de pâte, pistaches et sirop parfumé.",
+      "price": "700 DA",
+      "cat": "douceurs",
+      "grad": "g5",
+      "recommended": true,
+      "photo": "./assets/images/menu/baklava.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Lahmacun",
+      "desc": "Fine pâte croustillante garnie de viande hachée épicée, tomates et herbes fraîches.",
+      "price": "800 DA",
+      "cat": "grillades",
+      "grad": "g6",
+      "recommended": false,
+      "photo": "./assets/images/menu/lahmacun.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Künefe",
+      "desc": "Dessert turc chaud aux cheveux d'ange, fromage fondant, sirop et pistaches.",
+      "price": "900 DA",
+      "cat": "douceurs",
+      "grad": "g7",
+      "recommended": true,
+      "photo": "./assets/images/menu/kunefe.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "label": "La flamme & le goût",
+      "grad": "g1",
+      "photo": "./assets/images/gallery-grill.jpg"
+    },
+    {
+      "label": "L'ambiance Diyarbakir",
+      "grad": "g2",
+      "photo": "./assets/images/gallery-restaurant.jpg"
+    },
+    {
+      "label": "Douceurs turques",
+      "grad": "g3",
+      "photo": "./assets/images/gallery-dessert.jpg"
+    }
+  ]
+}

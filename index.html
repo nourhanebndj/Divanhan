@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta name="theme-color" content="#171512">
+
+  <meta
+    name="description"
+    content="Découvrez Diyarbakir, restaurant turc à Annaba. Grillades, mezzés, plats traditionnels et saveurs authentiques de Turquie."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="./assets/style.css">
+
+  <title>Diyarbakir — Saveurs de Turquie à Annaba</title>
+</head>
+
+<body>
+
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+
+      <a href="#hero" class="logo-link" aria-label="Diyarbakir - Accueil">
+        <img
+          src="./assets/images/diyarbakir_logo.png"
+          alt="Diyarbakir"
+          class="logo"
+        >
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#histoire">Notre histoire</a>
+        <a href="#carte">La carte</a>
+        <a href="#galerie">Découvrir</a>
+        <a href="#localisation">Nous trouver</a>
+      </nav>
+
+      <a class="header-phone" href="tel:+213796626037">
+        <i class="fa-solid fa-phone"></i>
+        <span>07 96 62 60 37</span>
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="hero" id="hero">
+
+      <div
+        class="hero-bg"
+        id="heroBg"
+        aria-hidden="true"
+      ></div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content wrap">
+
+        <div class="hero-text">
+
+          <div class="eyebrow">
+            Restaurant turc à Annaba
+          </div>
+
+          <h1>
+            Les saveurs<br>
+            authentiques<br>
+            de Turquie.
+          </h1>
+
+          <p>
+            Grillades, mezzés et spécialités traditionnelles
+            préparés avec passion.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#carte" class="btn btn-gold">
+              <span>Découvrir la carte</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#localisation" class="btn btn-outline">
+              <span>Nous trouver</span>
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <button
+        type="button"
+        class="hero-arrow hero-prev"
+        id="prev"
+        aria-label="Image précédente"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <button
+        type="button"
+        class="hero-arrow hero-next"
+        id="next"
+        aria-label="Image suivante"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <div class="hero-counter">
+        <span id="count">01 / 03</span>
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         HISTOIRE
+    ========================================== -->
+
+    <section class="intro" id="histoire">
+
+      <div class="wrap intro-grid">
+
+        <div class="intro-image reveal">
+          <img
+            src="./assets/images/intro_section.jpg"
+            alt="Restaurant Diyarbakir à Annaba"
+          >
+        </div>
+
+        <div class="intro-content reveal">
+
+          <div class="eyebrow">
+            Notre histoire
+          </div>
+
+          <h2>
+            Une table inspirée<br>
+            par la Turquie.
+          </h2>
+
+          <p>
+            Bienvenue chez Diyarbakir, une adresse où les
+            saveurs de la cuisine turque rencontrent
+            l'ambiance chaleureuse d'Annaba.
+          </p>
+
+          <p>
+            Notre cuisine met à l'honneur les grillades,
+            les mezzés et les recettes traditionnelles
+            préparées avec des ingrédients soigneusement
+            sélectionnés.
+          </p>
+
+          <a href="#carte" class="text-link">
+            Découvrir notre carte
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CARTE
+    ========================================== -->
+
+    <section class="menu-section" id="carte">
+
+      <div class="wrap">
+
+        <div class="section-heading reveal">
+
+          <div>
+            <div class="eyebrow">
+              Notre carte
+            </div>
+
+            <h2>
+              Les saveurs<br>
+              de Diyarbakir.
+            </h2>
+          </div>
+
+          <p>
+            Une sélection de spécialités turques,
+            grillades et recettes généreuses.
+          </p>
+
+        </div>
+
+
+        <!-- FILTRES -->
+
+        <div class="menu-tabs reveal" role="tablist">
+
+          <button
+            type="button"
+            class="menu-tab active"
+            data-category="all"
+          >
+            Tout
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab"
+            data-category="grillades"
+          >
+            Grillades
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab"
+            data-category="mezzes"
+          >
+            Mezzés
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab"
+            data-category="plats"
+          >
+            Plats
+          </button>
+
+          <button
+            type="button"
+            class="menu-tab"
+            data-category="desserts"
+          >
+            Desserts
+          </button>
+
+        </div>
+
+
+        <!-- PRODUITS CHARGÉS PAR main.js -->
+
+        <div
+          class="menu-grid"
+          id="dishes"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         GRANDES IMAGES
+    ========================================== -->
+
+    <section class="discover-large" id="galerie">
+
+      <div class="wrap">
+
+        <div class="discover-grid">
+
+          <!-- IMAGE 1 -->
+
+          <a
+            href="#carte"
+            class="discover-card reveal"
+          >
+
+            <img
+              src="./assets/images/gallery-grill.jpg"
+              alt="Grillades turques"
+              loading="lazy"
+            >
+
+            <div class="discover-overlay">
+
+              <span>
+                Saveurs authentiques
+              </span>
+
+              <h2>
+                Grillades<br>
+                turques
+              </h2>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+          </a>
+
+
+          <!-- IMAGE 2 -->
+
+          <a
+            href="#carte"
+            class="discover-card reveal"
+          >
+
+            <img
+              src="./assets/images/gallery-dessert.jpg"
+              alt="Mezzés turcs"
+              loading="lazy"
+            >
+
+            <div class="discover-overlay">
+
+              <span>
+                Tradition turque
+              </span>
+
+              <h2>
+                Kunafa<br>
+                traditionnels
+              </h2>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+          </a>
+
+
+          <!-- GRANDE IMAGE -->
+
+          <a
+            href="#carte"
+            class="discover-card discover-card-wide reveal"
+          >
+
+            <img
+              src="./assets/images/gallery-restaurant.jpg"
+              alt="Spécialités turques"
+              loading="lazy"
+            >
+
+            <div class="discover-overlay">
+
+              <span>
+                Diyarbakir
+              </span>
+
+              <h2>
+                Les spécialités<br>
+                de Turquie
+              </h2>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         LOCALISATION
+    ========================================== -->
+
+    <section class="locate" id="localisation">
+
+      <div class="wrap locate-grid">
+
+        <!-- MAP -->
+
+        <div class="map-box reveal">
+
+          <iframe
+            src="https://www.google.com/maps?q=36.913799,7.7499091&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Diyarbakir Turkish Restaurant - Annaba"
+          ></iframe>
+
+        </div>
+
+
+        <!-- INFORMATIONS -->
+
+        <div class="locate-info reveal">
+
+          <div class="eyebrow">
+            Nous trouver
+          </div>
+
+          <h2>
+            À bientôt<br>
+            chez Diyarbakir.
+          </h2>
+
+
+          <!-- ADRESSE -->
+
+          <div class="info-line">
+
+            <span class="info-icon" aria-hidden="true">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+
+            <div>
+
+              <strong>
+                Adresse
+              </strong>
+
+              <span>
+                Château Chancel Zaafrania,
+                Route de Zaafrania,
+                Annaba 23000, Algérie
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- HORAIRES -->
+
+          <div class="info-line">
+
+            <span class="info-icon" aria-hidden="true">
+              <i class="fa-regular fa-clock"></i>
+            </span>
+
+            <div>
+
+              <strong>
+                Horaires
+              </strong>
+
+              <span>
+                Tous les jours<br>
+                09h00 – 00h00
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- RESEAUX -->
+
+          <div class="social-row">
+
+            <a
+              class="social-icon"
+              href="https://wa.me/213796626037"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              title="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              class="social-icon"
+              href="https://www.instagram.com/diyarbakir_restaurant_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              class="social-icon"
+              href="https://www.facebook.com/profile.php?id=61559829802926"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              title="Facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+          </div>
+
+
+          <!-- BOUTONS -->
+
+          <div class="actions">
+
+            <a
+              class="btn btn-gold"
+              href="https://www.google.com/maps/place/Diyarbakir+Turkish+Restaurant,+chateau+chancel+Zaafrania,+Rte+de+Zaafrania,+Annaba+23000/@36.913799,7.7499091,13z"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <span>Voir l'itinéraire</span>
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="tel:+213796626037"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span>Appeler</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer class="site-footer">
+
+    <div class="wrap footer-inner">
+
+      <div class="footer-brand">
+
+        <img
+          src="./assets/images/diyarbakir_logo.png"
+          alt="Diyarbakir"
+        >
+
+        <p>
+          Saveurs authentiques de Turquie
+          à Annaba.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#histoire">
+          Notre histoire
+        </a>
+
+        <a href="#carte">
+          La carte
+        </a>
+
+        <a href="#galerie">
+          Découvrir
+        </a>
+
+        <a href="#localisation">
+          Nous trouver
+        </a>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <a
+          href="https://wa.me/213796626037"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/diyarbakir_restaurant_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61559829802926"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="wrap">
+
+        <span>
+          © <span id="year"></span>
+          Diyarbakir. Tous droits réservés.
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT EXTERNE -->
+
+  <script src="./assets/main.js"></script>
+
+</body>
+</html>
