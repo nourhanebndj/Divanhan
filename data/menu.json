@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Salade César",
-      "desc": "Laitue fraîche, poulet, croûtons croustillants, fromage, raisins secs et sauce César maison.",
+      "desc": "Poulet, laitue, fromage et sauce César maison.",
       "price": "600 DA",
       "cat": "salades",
       "grad": "g0",
@@ -12,298 +12,58 @@
     },
     {
       "id": 2,
-      "name": "Riz Méditerranéen",
-      "desc": "Riz parfumé accompagné de thon, légumes frais et sauce légère.",
-      "price": "500 DA",
-      "cat": "salades",
-      "grad": "g1",
-      "recommended": false,
-      "photo": "./assets/images/menu/riz_mediterraneen.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Salade Exotique",
-      "desc": "Lit de fromage frais, graines de chia, fruits de saison et miel naturel.",
-      "price": "700 DA",
-      "cat": "salades",
-      "grad": "g2",
-      "recommended": true,
-      "photo": "./assets/images/menu/salade_exotique.jpg"
-    },
-    {
-      "id": 4,
       "name": "Cocktail Prestige Go",
-      "desc": "Quinoa assaisonné, purée d'avocat, saumon fumé, fromage et sauce citronnée.",
+      "desc": "Quinoa, avocat, saumon fumé et sauce citronnée.",
       "price": "1 200 DA",
       "cat": "salades",
-      "grad": "g3",
+      "grad": "g1",
       "recommended": true,
       "photo": "./assets/images/menu/cocktail_prestige.jpg"
     },
     {
-      "id": 5,
-      "name": "Carpaccio de Betterave",
-      "desc": "Betterave délicatement préparée, vinaigrette, orange et pistaches.",
-      "price": "1 000 DA",
-      "cat": "salades",
-      "grad": "g4",
-      "recommended": false,
-      "photo": "./assets/images/menu/carpaccio_betterave.jpg"
-    },
-    {
-      "id": 6,
+      "id": 3,
       "name": "Filet de Poulet Grillé",
-      "desc": "Filet de poulet grillé, tendre et savoureux.",
+      "desc": "Filet de poulet tendre et savoureux.",
       "price": "800 DA",
       "cat": "grillades",
-      "grad": "g5",
+      "grad": "g2",
       "recommended": true,
       "photo": "./assets/images/menu/filet_poulet.jpg"
     },
     {
-      "id": 7,
-      "name": "Tenders Maison Dorés",
-      "desc": "Morceaux de poulet panés maison, dorés et croustillants.",
-      "price": "900 DA",
-      "cat": "grillades",
-      "grad": "g6",
-      "recommended": true,
-      "photo": "./assets/images/menu/tenders.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Cordon Bleu sur son Lit de Pâtes",
-      "desc": "Cordon bleu gourmand accompagné de pâtes.",
-      "price": "1 000 DA",
-      "cat": "grillades",
-      "grad": "g7",
-      "recommended": true,
-      "photo": "./assets/images/menu/cordon_bleu.jpg"
-    },
-    {
-      "id": 9,
+      "id": 4,
       "name": "Côtelettes d'Agneau Grillées",
-      "desc": "Côtelettes d'agneau grillées pour une assiette généreuse et savoureuse.",
+      "desc": "Côtelettes d'agneau grillées.",
       "price": "2 000 DA",
       "cat": "grillades",
-      "grad": "g0",
+      "grad": "g3",
       "recommended": true,
       "photo": "./assets/images/menu/cotelettes_agneau.jpg"
     },
     {
-      "id": 10,
-      "name": "Bœuf Tendre Grillé",
-      "desc": "Bœuf tendre grillé, préparé pour préserver toute sa saveur.",
-      "price": "1 800 DA",
-      "cat": "grillades",
-      "grad": "g1",
-      "recommended": true,
-      "photo": "./assets/images/menu/boeuf_grille.jpg"
-    },
-    {
-      "id": 11,
-      "name": "Foie Grillé",
-      "desc": "Foie grillé et préparé avec soin. Selon disponibilité.",
-      "price": "2 200 DA",
-      "cat": "grillades",
-      "grad": "g2",
-      "recommended": false,
-      "photo": "./assets/images/menu/foie_grille.jpg"
-    },
-    {
-      "id": 12,
-      "name": "Grillades en Folie",
-      "desc": "Un assortiment gourmand de viandes pour les amateurs de grillades.",
-      "price": "À confirmer",
-      "cat": "grillades",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/grillades_folie.jpg"
-    },
-    {
-      "id": 13,
-      "name": "Dorade Grillée",
-      "desc": "Dorade grillée, préparée avec soin. Selon disponibilité.",
-      "price": "À confirmer",
-      "cat": "grillades",
-      "grad": "g4",
-      "recommended": false,
-      "photo": "./assets/images/menu/dorade_grillee.jpg"
-    },
-    {
-      "id": 14,
-      "name": "Gratin Poulet",
-      "desc": "Pommes de terre fondantes, poulet et fromage gratiné.",
-      "price": "500 DA",
-      "cat": "gratins",
-      "grad": "g5",
-      "recommended": true,
-      "photo": "./assets/images/menu/gratin_poulet.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Gratin Viande",
-      "desc": "Pommes de terre fondantes, viande hachée et fromage gratiné.",
-      "price": "700 DA",
-      "cat": "gratins",
-      "grad": "g6",
-      "recommended": true,
-      "photo": "./assets/images/menu/gratin_viande.jpg"
-    },
-    {
-      "id": 16,
+      "id": 5,
       "name": "Gratin Crevettes",
-      "desc": "Pommes de terre fondantes, crevettes et fromage gratiné.",
+      "desc": "Pommes de terre, crevettes et fromage gratiné.",
       "price": "800 DA",
       "cat": "gratins",
-      "grad": "g7",
+      "grad": "g4",
       "recommended": true,
       "photo": "./assets/images/menu/gratin_crevettes.jpg"
     },
     {
-      "id": 17,
-      "name": "Frites Gratinées",
-      "desc": "Frites généreuses, sauce fondante et fromage gratiné.",
-      "price": "500 DA",
-      "cat": "gratins",
-      "grad": "g0",
-      "recommended": false,
-      "photo": "./assets/images/menu/frites_gratinees.jpg"
-    },
-    {
-      "id": 18,
-      "name": "Pâtes Poulet",
-      "desc": "Pâtes à l'émincé de poulet et au fromage.",
-      "price": "À confirmer",
-      "cat": "pates",
-      "grad": "g1",
-      "recommended": true,
-      "photo": "./assets/images/menu/pates_poulet.jpg"
-    },
-    {
-      "id": 19,
-      "name": "Pâtes Bolognaise",
-      "desc": "Pâtes accompagnées de viande hachée en sauce tomate.",
-      "price": "À confirmer",
-      "cat": "pates",
-      "grad": "g2",
-      "recommended": true,
-      "photo": "./assets/images/menu/pates_bolognaise.jpg"
-    },
-    {
-      "id": 20,
-      "name": "Pâtes Crevettes",
-      "desc": "Pâtes aux crevettes fraîches et au fromage.",
-      "price": "À confirmer",
-      "cat": "pates",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/pates_crevettes.jpg"
-    },
-    {
-      "id": 21,
-      "name": "Pizza Classique",
-      "desc": "Sauce tomate, fromage et olives.",
-      "price": "À confirmer",
-      "cat": "pizzas",
-      "grad": "g4",
-      "recommended": false,
-      "photo": "./assets/images/menu/pizza_classique.jpg"
-    },
-    {
-      "id": 22,
-      "name": "Pizza Végétarienne",
-      "desc": "Sauce tomate, légumes sautés, fromage et olives.",
-      "price": "À confirmer",
-      "cat": "pizzas",
-      "grad": "g5",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_vegetarienne.jpg"
-    },
-    {
-      "id": 23,
-      "name": "Pizza Thon",
-      "desc": "Sauce tomate, thon, fromage et olives.",
-      "price": "À confirmer",
-      "cat": "pizzas",
-      "grad": "g6",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_thon.jpg"
-    },
-    {
-      "id": 24,
-      "name": "Pizza Blanche Poulet",
-      "desc": "Sauce blanche, poulet, fromage et olives.",
-      "price": "700 DA",
-      "cat": "pizzas",
-      "grad": "g7",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_blanche_poulet.jpg"
-    },
-    {
-      "id": 25,
-      "name": "Pizza Rouge Viande",
-      "desc": "Sauce tomate, viande hachée, fromage et olives.",
-      "price": "800 DA",
-      "cat": "pizzas",
-      "grad": "g0",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_rouge_viande.jpg"
-    },
-    {
-      "id": 26,
+      "id": 6,
       "name": "Pizza BBQ Maline",
-      "desc": "Sauce tomate, viande hachée, poulet, fromage, sauce BBQ et olives.",
+      "desc": "Viande, poulet, fromage et sauce BBQ.",
       "price": "900 DA",
       "cat": "pizzas",
-      "grad": "g1",
+      "grad": "g5",
       "recommended": true,
       "photo": "./assets/images/menu/pizza_bbq.jpg"
     },
     {
-      "id": 27,
-      "name": "Pizza Fromagère",
-      "desc": "Sauce blanche, gruyère, mozzarella, edam, camembert et olives.",
-      "price": "900 DA",
-      "cat": "pizzas",
-      "grad": "g2",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_fromagere.jpg"
-    },
-    {
-      "id": 28,
-      "name": "Pizza Marine",
-      "desc": "Sauce blanche, crevettes fraîches, fromage et olives.",
-      "price": "950 DA",
-      "cat": "pizzas",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_marine.jpg"
-    },
-    {
-      "id": 29,
-      "name": "Pizza Go",
-      "desc": "Sauce blanche, viande hachée, pepperoni, camembert, fromage et olives.",
-      "price": "1 000 DA",
-      "cat": "pizzas",
-      "grad": "g4",
-      "recommended": true,
-      "photo": "./assets/images/menu/pizza_go.jpg"
-    },
-    {
-      "id": 30,
-      "name": "Bowl Blanc",
-      "desc": "Frites ou riz, crispy chicken, fromage et sauce Go.",
-      "price": "600 DA",
-      "cat": "bowls",
-      "grad": "g5",
-      "recommended": true,
-      "photo": "./assets/images/menu/bowl_blanc.jpg"
-    },
-    {
-      "id": 31,
+      "id": 7,
       "name": "Bowl Tandoori",
-      "desc": "Frites ou riz, poulet tandoori, poivrons, oignons caramélisés, fromage et sauce Go.",
+      "desc": "Poulet tandoori, frites ou riz, fromage et sauce Go.",
       "price": "700 DA",
       "cat": "bowls",
       "grad": "g6",
@@ -311,424 +71,34 @@
       "photo": "./assets/images/menu/bowl_tandoori.jpg"
     },
     {
-      "id": 32,
-      "name": "Bowl Rouge",
-      "desc": "Frites ou riz, viande rouge en cubes, fromage et sauce Go.",
-      "price": "1 000 DA",
-      "cat": "bowls",
-      "grad": "g7",
-      "recommended": true,
-      "photo": "./assets/images/menu/bowl_rouge.jpg"
-    },
-    {
-      "id": 33,
-      "name": "Bowl Malin",
-      "desc": "Frites ou riz, crispy chicken, viande rouge en cubes, fromage et sauce Go.",
-      "price": "800 DA",
-      "cat": "bowls",
-      "grad": "g0",
-      "recommended": true,
-      "photo": "./assets/images/menu/bowl_malin.jpg"
-    },
-    {
-      "id": 34,
-      "name": "Bowl Marin",
-      "desc": "Frites ou riz, crevettes fraîches panées, fromage et sauce Go.",
-      "price": "1 000 DA",
-      "cat": "bowls",
-      "grad": "g1",
-      "recommended": true,
-      "photo": "./assets/images/menu/bowl_marin.jpg"
-    },
-    {
-      "id": 35,
-      "name": "Burger Blanc + Frites",
-      "desc": "Duo de crudités, fromage, poulet pané et sauce Go.",
-      "price": "500 DA",
-      "cat": "burgers",
-      "grad": "g2",
-      "recommended": true,
-      "photo": "./assets/images/menu/burger_blanc.jpg"
-    },
-    {
-      "id": 36,
-      "name": "Burger Rouge + Frites",
-      "desc": "Duo de crudités, fromage, viande hachée et sauce Go.",
-      "price": "500 DA",
-      "cat": "burgers",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/burger_rouge.jpg"
-    },
-    {
-      "id": 37,
+      "id": 8,
       "name": "Super Burger",
-      "desc": "Duo de crudités, double viande hachée, œuf, fromage et sauce Go.",
+      "desc": "Double viande, œuf, fromage et sauce Go.",
       "price": "600 DA",
       "cat": "burgers",
-      "grad": "g4",
+      "grad": "g7",
       "recommended": true,
       "photo": "./assets/images/menu/super_burger.jpg"
     },
     {
-      "id": 38,
-      "name": "Sandwich Blanc",
-      "desc": "Duo de crudités, fromage, crispy chicken et sauce Go.",
-      "price": "400 DA",
-      "cat": "sandwichs",
-      "grad": "g5",
-      "recommended": false,
-      "photo": "./assets/images/menu/sandwich_blanc.jpg"
-    },
-    {
-      "id": 39,
-      "name": "Sandwich Blanc Crémeux",
-      "desc": "Duo de crudités, fromage, poulet, sauce fromagère et slice.",
-      "price": "600 DA",
-      "cat": "sandwichs",
-      "grad": "g6",
-      "recommended": true,
-      "photo": "./assets/images/menu/sandwich_cremeux.jpg"
-    },
-    {
-      "id": 40,
-      "name": "Sandwich Rouge",
-      "desc": "Duo de crudités, fromage, viande hachée et sauce Go.",
-      "price": "À confirmer",
-      "cat": "sandwichs",
-      "grad": "g7",
-      "recommended": false,
-      "photo": "./assets/images/menu/sandwich_rouge.jpg"
-    },
-    {
-      "id": 41,
-      "name": "Sandwich Malin",
-      "desc": "Duo de crudités, fromage, poulet, viande hachée, sauce fromagère et slice.",
-      "price": "À confirmer",
-      "cat": "sandwichs",
-      "grad": "g0",
-      "recommended": true,
-      "photo": "./assets/images/menu/sandwich_malin.jpg"
-    },
-    {
-      "id": 42,
-      "name": "Salade de Fruits Individuelle",
-      "desc": "Une sélection de fruits frais de saison, préparés avec soin.",
-      "price": "500 DA",
-      "cat": "desserts",
-      "grad": "g1",
-      "recommended": true,
-      "photo": "./assets/images/menu/salade_fruits.jpg"
-    },
-    {
-      "id": 43,
-      "name": "Assiette de Fruits à Partager",
-      "desc": "Une généreuse composition de fruits frais à partager.",
-      "price": "1 200 DA",
-      "cat": "desserts",
-      "grad": "g2",
-      "recommended": true,
-      "photo": "./assets/images/menu/assiette_fruits.jpg"
-    },
-    {
-      "id": 44,
-      "name": "Part de Tiramisu Onctueux",
-      "desc": "Un tiramisu crémeux et gourmand.",
-      "price": "450 DA",
-      "cat": "desserts",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/tiramisu.jpg"
-    },
-    {
-      "id": 45,
-      "name": "Part de Cheesecake Crémeux",
-      "desc": "Un cheesecake fondant à la texture délicatement crémeuse.",
-      "price": "450 DA",
-      "cat": "desserts",
-      "grad": "g4",
-      "recommended": true,
-      "photo": "./assets/images/menu/cheesecake.jpg"
-    },
-    {
-      "id": 46,
-      "name": "Gâteau Gourmand du Jour",
-      "desc": "Une création sucrée du jour, selon disponibilité.",
-      "price": "300 DA",
-      "cat": "desserts",
-      "grad": "g5",
-      "recommended": false,
-      "photo": "./assets/images/menu/gateau_jour.jpg"
-    },
-    {
-      "id": 47,
-      "name": "Tiramisu en Boîte",
-      "desc": "Un tiramisu généreux à savourer à tout moment.",
-      "price": "500 DA",
-      "cat": "desserts",
-      "grad": "g6",
-      "recommended": true,
-      "photo": "./assets/images/menu/tiramisu_boite.jpg"
-    },
-    {
-      "id": 48,
-      "name": "Mousse au Chocolat",
-      "desc": "Une mousse au chocolat légère et onctueuse.",
-      "price": "400 DA",
-      "cat": "desserts",
-      "grad": "g7",
-      "recommended": true,
-      "photo": "./assets/images/menu/mousse_chocolat.jpg"
-    },
-    {
-      "id": 49,
-      "name": "Tiramisu Truffles",
-      "desc": "De délicieuses bouchées gourmandes inspirées du tiramisu.",
-      "price": "600 DA",
-      "cat": "desserts",
-      "grad": "g0",
-      "recommended": true,
-      "photo": "./assets/images/menu/tiramisu_truffles.jpg"
-    },
-    {
-      "id": 50,
+      "id": 9,
       "name": "Tiramisu Kunafa",
-      "desc": "Une création gourmande associant tiramisu et kunafa.",
+      "desc": "Une création gourmande au tiramisu et kunafa.",
       "price": "600 DA",
       "cat": "desserts",
-      "grad": "g1",
+      "grad": "g0",
       "recommended": true,
       "photo": "./assets/images/menu/tiramisu_kunafa.jpg"
     },
     {
-      "id": 51,
-      "name": "Crêpe Artisanale",
-      "desc": "Une crêpe préparée avec soin et garnie selon vos envies.",
-      "price": "400 DA",
-      "cat": "desserts",
-      "grad": "g2",
-      "recommended": false,
-      "photo": "./assets/images/menu/crepe_artisanale.jpg"
-    },
-    {
-      "id": 52,
-      "name": "Crêpe Tagliatelle",
-      "desc": "Une création de crêpe originale et généreuse.",
-      "price": "800 DA",
-      "cat": "desserts",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/crepe_tagliatelle.jpg"
-    },
-    {
-      "id": 53,
-      "name": "Ice Waffles",
-      "desc": "Des gaufres gourmandes accompagnées d'une touche glacée.",
-      "price": "700 DA",
-      "cat": "desserts",
-      "grad": "g4",
-      "recommended": true,
-      "photo": "./assets/images/menu/ice_waffles.jpg"
-    },
-    {
-      "id": 54,
-      "name": "Jus Cocktail Maison",
-      "desc": "Un cocktail de fruits préparé maison.",
-      "price": "300 DA",
-      "cat": "boissons",
-      "grad": "g5",
-      "recommended": true,
-      "photo": "./assets/images/menu/jus_cocktail.jpg"
-    },
-    {
-      "id": 55,
-      "name": "Jus de Citron",
-      "desc": "Un jus de citron frais et rafraîchissant.",
-      "price": "200 DA",
-      "cat": "boissons",
-      "grad": "g6",
-      "recommended": false,
-      "photo": "./assets/images/menu/jus_citron.jpg"
-    },
-    {
-      "id": 56,
-      "name": "Jus d'Orange Frais",
-      "desc": "Un jus d'orange fraîchement pressé.",
-      "price": "400 DA",
-      "cat": "boissons",
-      "grad": "g7",
-      "recommended": true,
-      "photo": "./assets/images/menu/jus_orange.jpg"
-    },
-    {
-      "id": 57,
-      "name": "Mojito Vert",
-      "desc": "Une boisson fraîche et pétillante aux saveurs de menthe.",
-      "price": "300 DA",
-      "cat": "boissons",
-      "grad": "g0",
-      "recommended": true,
-      "photo": "./assets/images/menu/mojito_vert.jpg"
-    },
-    {
-      "id": 58,
-      "name": "Mojito Bleu",
-      "desc": "Un mojito rafraîchissant aux notes fruitées.",
-      "price": "400 DA",
-      "cat": "boissons",
-      "grad": "g1",
-      "recommended": true,
-      "photo": "./assets/images/menu/mojito_bleu.jpg"
-    },
-    {
-      "id": 59,
-      "name": "Mojito Rouge Rubis Acide",
-      "desc": "Un mojito rouge aux saveurs acidulées et rafraîchissantes.",
+      "id": 10,
+      "name": "Mojito Rouge",
+      "desc": "Boisson fraîche aux saveurs acidulées.",
       "price": "500 DA",
       "cat": "boissons",
-      "grad": "g2",
+      "grad": "g1",
       "recommended": true,
       "photo": "./assets/images/menu/mojito_rouge.jpg"
-    },
-    {
-      "id": 60,
-      "name": "Piña Colada",
-      "desc": "Une boisson exotique aux saveurs d'ananas et de coco.",
-      "price": "500 DA",
-      "cat": "boissons",
-      "grad": "g3",
-      "recommended": true,
-      "photo": "./assets/images/menu/pina_colada.jpg"
-    },
-    {
-      "id": 61,
-      "name": "Café Nespresso",
-      "desc": "Un café Nespresso aux arômes intenses.",
-      "price": "200 DA",
-      "cat": "boissons",
-      "grad": "g4",
-      "recommended": false,
-      "photo": "./assets/images/menu/cafe_nespresso.jpg"
-    },
-    {
-      "id": 62,
-      "name": "Cappuccino",
-      "desc": "Un café onctueux surmonté d'une mousse de lait.",
-      "price": "300 DA",
-      "cat": "boissons",
-      "grad": "g5",
-      "recommended": true,
-      "photo": "./assets/images/menu/cappuccino.jpg"
-    },
-    {
-      "id": 63,
-      "name": "Café Crémeux",
-      "desc": "Un café doux et crémeux.",
-      "price": "200 DA",
-      "cat": "boissons",
-      "grad": "g6",
-      "recommended": false,
-      "photo": "./assets/images/menu/cafe_cremeux.jpg"
-    },
-    {
-      "id": 64,
-      "name": "Chocolat Chaud",
-      "desc": "Un chocolat chaud riche et réconfortant.",
-      "price": "300 DA",
-      "cat": "boissons",
-      "grad": "g7",
-      "recommended": true,
-      "photo": "./assets/images/menu/chocolat_chaud.jpg"
-    },
-    {
-      "id": 65,
-      "name": "Thé Vert",
-      "desc": "Un thé vert délicat à déguster à tout moment.",
-      "price": "100 DA",
-      "cat": "boissons",
-      "grad": "g0",
-      "recommended": false,
-      "photo": "./assets/images/menu/the_vert.jpg"
-    },
-    {
-      "id": 66,
-      "name": "Ice Latté",
-      "desc": "Un café glacé au lait, doux et rafraîchissant.",
-      "price": "400 DA",
-      "cat": "boissons",
-      "grad": "g1",
-      "recommended": true,
-      "photo": "./assets/images/menu/ice_latte.jpg"
-    },
-    {
-      "id": 67,
-      "name": "Ice Chocolatté",
-      "desc": "Une boisson chocolatée glacée et gourmande.",
-      "price": "500 DA",
-      "cat": "boissons",
-      "grad": "g2",
-      "recommended": true,
-      "photo": "./assets/images/menu/ice_chocolatte.jpg"
-    }
-  ],
-  "supplements": [
-    {
-      "name": "Suppléments Pizza",
-      "items": [
-        { "name": "Gruyère", "price": "250 DA" },
-        { "name": "Thon", "price": "150 DA" },
-        { "name": "Poulet", "price": "200 DA" },
-        { "name": "Viande hachée", "price": "200 DA" },
-        { "name": "Champignons frais", "price": "250 DA" },
-        { "name": "Crevettes", "price": "350 DA" },
-        { "name": "Saumon", "price": "400 DA" }
-      ]
-    },
-    {
-      "name": "Suppléments Bowl",
-      "items": [
-        { "name": "Viande rouge", "price": "400 DA" },
-        { "name": "Crispy Chicken", "price": "250 DA" },
-        { "name": "Gruyère", "price": "250 DA" },
-        { "name": "Œuf", "price": "50 DA" },
-        { "name": "Sauce Spicy / Sucrée", "price": "100 DA" }
-      ]
-    },
-    {
-      "name": "Suppléments Sandwich",
-      "items": [
-        { "name": "Frites", "price": "150 DA" },
-        { "name": "Gruyère / Camembert", "price": "250 DA" },
-        { "name": "Viande", "price": "250 DA" },
-        { "name": "Œuf", "price": "50 DA" }
-      ]
-    },
-    {
-      "name": "Suppléments Desserts",
-      "items": [
-        { "name": "Coulis Chocolat", "price": "200 DA" },
-        { "name": "Coulis Pistache", "price": "300 DA" },
-        { "name": "Fruits secs", "price": "200 DA" },
-        { "name": "Fruits au choix", "price": "200 DA" },
-        { "name": "Barre au Chocolat", "price": "300 DA" }
-      ]
-    }
-  ],
-  "gallery": [
-    {
-      "label": "La cuisine gourmande",
-      "grad": "g1",
-      "photo": "./assets/images/gallery-grill.jpg"
-    },
-    {
-      "label": "L'univers Le Gourmet",
-      "grad": "g2",
-      "photo": "./assets/images/gallery-restaurant.jpg"
-    },
-    {
-      "label": "Douceurs & desserts",
-      "grad": "g3",
-      "photo": "./assets/images/gallery-dessert.jpg"
     }
   ]
 }
