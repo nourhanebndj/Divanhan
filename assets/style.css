@@ -10,7 +10,7 @@
   --cream: #f4efe5;
   --cream-soft: #d8d0c3;
 
-  --gold: #c99a45;
+  --gold: #dca855;
   --gold-light: #e0b86a;
 
   --line: rgba(255, 255, 255, .12);
@@ -841,9 +841,9 @@ select {
   font-family: "Playfair Display", serif;
 
   font-size: clamp(
-    38px,
-    4vw,
-    62px
+    30px,
+    3vw,
+    40px
   );
 
   font-weight: 500;
