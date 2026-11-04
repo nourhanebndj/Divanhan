@@ -8,7 +8,7 @@
       "cat": "salades",
       "grad": "g0",
       "recommended": true,
-      "photo": "./assets/images/menu/salade_cesar.jpg"
+      "photo": "./assets/images/menu/salade_cesar.jpeg"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "cat": "salades",
       "grad": "g1",
       "recommended": true,
-      "photo": "./assets/images/menu/cocktail_prestige.jpg"
+      "photo": "./assets/images/menu/cocktail_prestige.webp"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "cat": "grillades",
       "grad": "g2",
       "recommended": true,
-      "photo": "./assets/images/menu/filet_poulet.jpg"
+      "photo": "./assets/images/menu/filet_poulet.jpeg"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "cat": "grillades",
       "grad": "g3",
       "recommended": true,
-      "photo": "./assets/images/menu/cotelettes_agneau.jpg"
+      "photo": "./assets/images/menu/cotelettes_agneau.jpeg"
     },
     {
       "id": 5,
@@ -58,17 +58,17 @@
       "cat": "pizzas",
       "grad": "g5",
       "recommended": true,
-      "photo": "./assets/images/menu/pizza_bbq.jpg"
+      "photo": "./assets/images/menu/pizza_bbq.jpeg"
     },
-    {
+{
       "id": 7,
-      "name": "Bowl Tandoori",
-      "desc": "Poulet tandoori, frites ou riz, fromage et sauce Go.",
+      "name": "Pasta Bolognaise",
+      "desc": "Pâtes, sauce bolognaise à la viande hachée et fromage.",
       "price": "700 DA",
-      "cat": "bowls",
+      "cat": "pates",
       "grad": "g6",
       "recommended": true,
-      "photo": "./assets/images/menu/bowl_tandoori.jpg"
+      "photo": "./assets/images/menu/pasta_bolognaise.jpeg"
     },
     {
       "id": 8,
@@ -78,17 +78,17 @@
       "cat": "burgers",
       "grad": "g7",
       "recommended": true,
-      "photo": "./assets/images/menu/super_burger.jpg"
+      "photo": "./assets/images/menu/super_burger.jpeg"
     },
     {
       "id": 9,
-      "name": "Tiramisu Kunafa",
-      "desc": "Une création gourmande au tiramisu et kunafa.",
+      "name": "Tiramisu Onctueux",
+      "desc": "Un délicieux tiramisu à la crème onctueuse et au cacao.",
       "price": "600 DA",
       "cat": "desserts",
       "grad": "g0",
       "recommended": true,
-      "photo": "./assets/images/menu/tiramisu_kunafa.jpg"
+      "photo": "./assets/images/menu/tiramisu_onctueux.jpg"
     },
     {
       "id": 10,
