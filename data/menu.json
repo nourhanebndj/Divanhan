@@ -1,4 +1,16 @@
 {
+  "categories": [
+    { "slug": "salades", "name": "Salades" },
+    { "slug": "grillades", "name": "Grillades" },
+    { "slug": "gratins", "name": "Gratins" },
+    { "slug": "pates", "name": "Pâtes" },
+    { "slug": "pizzas", "name": "Pizzas" },
+    { "slug": "bowls", "name": "Bowls" },
+    { "slug": "burgers", "name": "Burgers" },
+    { "slug": "sandwichs", "name": "Sandwichs" },
+    { "slug": "desserts", "name": "Desserts" },
+    { "slug": "boissons", "name": "Boissons" }
+  ],
   "dishes": [
     {
       "id": 1,

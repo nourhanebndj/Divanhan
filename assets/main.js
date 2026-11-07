@@ -5,6 +5,7 @@
 ========================================= */
 
 let DISHES = [];
+let CATEGORY_NAMES = {};
 
 let heroIndex = 0;
 let heroInterval = null;
@@ -42,8 +43,14 @@ function escapeHTML(value) {
 function photoStyle(item) {
 
   if (item.photo) {
+
+    const url = String(item.photo).replace(
+      /['"()\\\s<>&]/g,
+      char => `%${char.charCodeAt(0).toString(16).padStart(2, "0")}`
+    );
+
     return `
-      background-image: url('${item.photo}');
+      background-image: url('${url}');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -70,6 +77,99 @@ function photoStyle(item) {
    CHARGEMENT DU MENU
 ========================================= */
 
+function formatPrice(price) {
+
+  if (price === null || price === undefined) {
+    return "";
+  }
+
+  const amount = String(price).replace(
+    /\B(?=(\d{3})+(?!\d))/g,
+    " "
+  );
+
+  return `${amount} DA`;
+}
+
+
+async function fetchJSON(url, options) {
+
+  const response = await fetch(url, options);
+
+  if (!response.ok) {
+    throw new Error(
+      `Erreur HTTP ${response.status}`
+    );
+  }
+
+  return response.json();
+}
+
+
+/* Les règles de la base ne renvoient que les plats disponibles. */
+
+async function fetchMenuFromSupabase(config) {
+
+  const options = {
+    headers: { apikey: config.anonKey },
+    signal: AbortSignal.timeout(8000)
+  };
+
+  const base = `${config.url}/rest/v1`;
+
+  const [categories, dishes] = await Promise.all([
+    fetchJSON(
+      `${base}/categories?select=id,slug,name&order=position,id`,
+      options
+    ),
+    fetchJSON(
+      `${base}/dishes?select=category_id,name,description,price,photo&order=position,id`,
+      options
+    )
+  ]);
+
+  const slugs = new Map(
+    categories.map(category => [category.id, category.slug])
+  );
+
+  return {
+    categories,
+    dishes: dishes.map(dish => ({
+      name: dish.name,
+      desc: dish.description,
+      price: formatPrice(dish.price),
+      cat: slugs.get(dish.category_id),
+      photo: dish.photo
+    }))
+  };
+}
+
+
+async function fetchMenu() {
+
+  const config = window.SUPABASE_CONFIG || {};
+
+  if (config.url && config.anonKey) {
+
+    try {
+
+      return await fetchMenuFromSupabase(config);
+
+    } catch (error) {
+
+      console.warn(
+        "Supabase indisponible, utilisation de menu.json :",
+        error
+      );
+    }
+  }
+
+  return fetchJSON("./data/menu.json", {
+    cache: "no-cache"
+  });
+}
+
+
 async function loadMenu() {
 
   const container = document.getElementById("dishes");
@@ -80,28 +180,28 @@ async function loadMenu() {
 
   try {
 
-    const response = await fetch("./data/menu.json", {
-      cache: "no-cache"
-    });
+    const data = await fetchMenu();
 
-    if (!response.ok) {
-      throw new Error(
-        `Erreur HTTP ${response.status}`
-      );
-    }
+    const categories = Array.isArray(data.categories)
+      ? data.categories
+      : [];
 
-    const data = await response.json();
+    CATEGORY_NAMES = Object.fromEntries(
+      categories.map(category => [category.slug, category.name])
+    );
 
     DISHES = Array.isArray(data.dishes)
       ? data.dishes
       : [];
+
+    renderCategoryTabs(categories);
 
     renderDishes("all");
 
   } catch (error) {
 
     console.error(
-      "Impossible de charger menu.json :",
+      "Impossible de charger la carte :",
       error
     );
 
@@ -167,7 +267,7 @@ function renderDishes(filter = "all") {
           escapeHTML(item.price);
 
         const cat =
-          escapeHTML(item.cat);
+          escapeHTML(CATEGORY_NAMES[item.cat] || item.cat);
 
         const style =
           photoStyle(item);
@@ -241,31 +341,62 @@ function renderDishes(filter = "all") {
    FILTRES MENU
 ========================================= */
 
-function initCategoryFilters() {
+function renderCategoryTabs(categories) {
 
   const tabs =
-    document.querySelectorAll(".menu-tab");
+    document.getElementById("menuTabs");
 
-  if (!tabs.length) {
+  if (!tabs) {
     return;
   }
 
-  tabs.forEach(tab => {
+  tabs.insertAdjacentHTML(
+    "beforeend",
+    categories
+      .map(category => `
+        <button
+          type="button"
+          class="menu-tab"
+          data-category="${escapeHTML(category.slug)}"
+        >
+          ${escapeHTML(category.name)}
+        </button>
+      `)
+      .join("")
+  );
+}
 
-    tab.addEventListener("click", () => {
 
-      tabs.forEach(item => {
+function initCategoryFilters() {
+
+  const tabs =
+    document.getElementById("menuTabs");
+
+  if (!tabs) {
+    return;
+  }
+
+  tabs.addEventListener("click", event => {
+
+    const tab =
+      event.target.closest(".menu-tab");
+
+    if (!tab) {
+      return;
+    }
+
+    tabs
+      .querySelectorAll(".menu-tab")
+      .forEach(item => {
         item.classList.remove("active");
       });
 
-      tab.classList.add("active");
+    tab.classList.add("active");
 
-      const category =
-        tab.dataset.category || "all";
+    const category =
+      tab.dataset.category || "all";
 
-      renderDishes(category);
-
-    });
+    renderDishes(category);
 
   });
 }
