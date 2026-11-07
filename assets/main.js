@@ -249,13 +249,15 @@ function renderDishes(filter = "all") {
       </div>
     `;
 
+    updateSlider();
+
     return;
   }
 
 
   container.innerHTML =
     filtered
-      .map((item, index) => {
+      .map(item => {
 
         const name =
           escapeHTML(item.name);
@@ -273,10 +275,7 @@ function renderDishes(filter = "all") {
           photoStyle(item);
 
         return `
-          <article
-            class="dish-card reveal"
-            style="transition-delay:${index * 50}ms"
-          >
+          <article class="dish-card">
 
             <div
               class="dish-image"
@@ -333,7 +332,147 @@ function renderDishes(filter = "all") {
       .join("");
 
 
-  initRevealElements();
+  container.scrollLeft = 0;
+
+  updateSlider();
+}
+
+
+/* =========================================
+   SLIDER MENU
+========================================= */
+
+function sliderMetrics(track) {
+
+  const cards =
+    track.querySelectorAll(".dish-card");
+
+  if (!cards.length) {
+    return { total: 0, step: 0, visible: 0 };
+  }
+
+  const step =
+    cards.length > 1
+      ? cards[1].offsetLeft - cards[0].offsetLeft
+      : cards[0].offsetWidth;
+
+  return {
+    total: cards.length,
+    step,
+    visible: Math.max(
+      1,
+      Math.floor(
+        (track.clientWidth + (step - cards[0].offsetWidth) + 1) / step
+      )
+    )
+  };
+}
+
+
+function updateSlider() {
+
+  const track =
+    document.getElementById("dishes");
+
+  const controls =
+    document.getElementById("sliderControls");
+
+  if (!track || !controls) {
+    return;
+  }
+
+  const { total, step, visible } =
+    sliderMetrics(track);
+
+  const maxScroll =
+    track.scrollWidth - track.clientWidth;
+
+  controls.hidden = maxScroll <= 1;
+
+  if (controls.hidden) {
+    return;
+  }
+
+  const atEnd =
+    track.scrollLeft >= maxScroll - 1;
+
+  /* Numéro de la dernière carte entièrement visible. */
+  const current = atEnd
+    ? total
+    : Math.min(
+        total,
+        Math.round(track.scrollLeft / step) + visible
+      );
+
+  document.getElementById("sliderCount").textContent =
+    `${String(current).padStart(2, "0")} / ${String(total).padStart(2, "0")}`;
+
+  document.getElementById("sliderProgress").style.width =
+    `${(current / total) * 100}%`;
+
+  document.getElementById("sliderPrev").disabled =
+    track.scrollLeft <= 1;
+
+  document.getElementById("sliderNext").disabled =
+    atEnd;
+}
+
+
+function moveSlider(direction) {
+
+  const track =
+    document.getElementById("dishes");
+
+  const { step, visible } =
+    sliderMetrics(track);
+
+  const reduceMotion =
+    window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+  track.scrollBy({
+    left: direction * step * visible,
+    behavior: reduceMotion ? "auto" : "smooth"
+  });
+}
+
+
+function initSlider() {
+
+  const track =
+    document.getElementById("dishes");
+
+  const previous =
+    document.getElementById("sliderPrev");
+
+  const next =
+    document.getElementById("sliderNext");
+
+  if (!track || !previous || !next) {
+    return;
+  }
+
+  previous.addEventListener(
+    "click",
+    () => moveSlider(-1)
+  );
+
+  next.addEventListener(
+    "click",
+    () => moveSlider(1)
+  );
+
+  track.addEventListener(
+    "scroll",
+    updateSlider,
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "resize",
+    updateSlider
+  );
 }
 
 
@@ -713,6 +852,8 @@ document.addEventListener(
     /* MENU */
 
     initCategoryFilters();
+
+    initSlider();
 
     loadMenu();
 

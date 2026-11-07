@@ -229,10 +229,49 @@ Nous accordons une attention particulière à la préparation de nos plats, à l
 
         <!-- PRODUITS CHARGÉS PAR main.js -->
 
-        <div
-          class="menu-grid"
-          id="dishes"
-        ></div>
+        <div class="menu-slider reveal">
+
+          <div
+            class="menu-track"
+            id="dishes"
+            tabindex="0"
+            role="region"
+            aria-label="Plats de la carte, faites défiler horizontalement"
+          ></div>
+
+          <div class="slider-controls" id="sliderControls" hidden>
+
+            <span class="slider-count" id="sliderCount" aria-live="polite"></span>
+
+            <div class="slider-progress" aria-hidden="true">
+              <span id="sliderProgress"></span>
+            </div>
+
+            <div class="slider-arrows">
+
+              <button
+                type="button"
+                class="slider-arrow"
+                id="sliderPrev"
+                aria-label="Plats précédents"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+
+              <button
+                type="button"
+                class="slider-arrow"
+                id="sliderNext"
+                aria-label="Plats suivants"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
